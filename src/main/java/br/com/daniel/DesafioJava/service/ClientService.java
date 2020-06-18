@@ -12,4 +12,9 @@ public interface ClientService {
 	Optional<Client> findById(Integer id);
 	
 	Client update(Client client);
+
+	Client save(Client client);
+
+	void delete(Integer id);
+
 }

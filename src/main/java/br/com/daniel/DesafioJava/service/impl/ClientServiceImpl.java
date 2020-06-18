@@ -29,4 +29,13 @@ public class ClientServiceImpl implements ClientService {
 	public Client update(Client client) {
 		return this.clientRepository.save(client);
 	}
+
+	public Client save(Client client) {
+		return this.clientRepository.save(client);
+	}
+
+	@Override
+	public void delete(Integer id) {
+		this.clientRepository.deleteById(id);
+	}
 }
