@@ -10,7 +10,7 @@ public class Product {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private Integer sku;
+	private String sku;
 	private String nome;
 	private String descricao;
 	private Float preco;
@@ -21,10 +21,10 @@ public class Product {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public Integer getSku() {
+	public String getSku() {
 		return sku;
 	}
-	public void setSku(Integer sku) {
+	public void setSku(String sku) {
 		this.sku = sku;
 	}
 	public String getNome() {
