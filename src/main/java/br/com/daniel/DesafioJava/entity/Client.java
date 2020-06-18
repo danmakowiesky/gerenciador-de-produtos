@@ -1,7 +1,7 @@
 package br.com.daniel.DesafioJava.entity;
 
 import java.util.Date;
-
+import java.lang.Integer;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

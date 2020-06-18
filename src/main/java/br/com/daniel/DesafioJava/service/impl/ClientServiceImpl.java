@@ -1,6 +1,7 @@
 package br.com.daniel.DesafioJava.service.impl;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,5 +18,15 @@ public class ClientServiceImpl implements ClientService {
 	@Override
 	public List<Client> FindAll() {
 		return this.clientRepository.findAll();
+	}
+
+	@Override
+	public Optional<Client> findById(Integer id) {
+		return this.clientRepository.findById(id);
+	}
+
+	@Override
+	public Client update(Client client) {
+		return this.clientRepository.save(client);
 	}
 }
